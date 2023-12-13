@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { AuthForm } from "./components/AuthForm";
+
 export default function Home() {
   return (
     <div
@@ -8,19 +10,23 @@ export default function Home() {
       <div className="sm:mx-auto sm:sm:w-full sm:max-w-md">
         <Image
           alt="Logo"
-          height="50"
-          width="50"
+          height="70"
+          width="70"
           className="mx-auto w-auto"
           src="/images/logo-dm-me.png"
         />
-        <h2
-          className="mt-6 text-center text-3xl font-bold tracking-tight text-blueApp-700"
-        >
-          Login to your account
-        </h2>
+        <div className="flex flex-row items-center justify-center content-evenly gap-2">
+          <span className="mt-6 text-silvergray-500">welcome to</span>
+          <h2
+            className="mt-6 text-center text-3xl font-bold tracking-tight text-blueApp-700"
+          >
+            DM_me
+          </h2>
+        </div>
+
       </div>
 
-      {/** AuthForm */}
+      <AuthForm />
     </div>
   )
 }

@@ -19,12 +19,18 @@ module.exports = {
       'silvergray-400': '#C4C4CC',
       'silvergray-500': '#8D8D99',
       'silvergray-600': '#7C7C8A',
+      'silvergray-700': '#111827',
   
+      'blueApp-800': '#2563eb',
       'blueApp-700': '#3b82f6',
       'blueApp-600': '#60a5fa',
       'blueApp-500': '#93c5fd',
     },
   },
   
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: 'class'
+    })
+  ],
 }
