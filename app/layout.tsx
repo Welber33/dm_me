@@ -1,9 +1,10 @@
 import './globals.css'
 import { Inter, Roboto } from 'next/font/google'
+import { ToasterContext } from './context/ToasterContext'
 
 // const inter = Inter({ subsets: ['latin'] })
-const roboto = Roboto({ 
-  weight: '400' ,
+const roboto = Roboto({
+  weight: '400',
   preload: false,
 })
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <ToasterContext />
+        {children}
+      </body>
     </html>
   )
 }
