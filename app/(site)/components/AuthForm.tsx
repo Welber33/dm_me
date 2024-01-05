@@ -1,5 +1,7 @@
 "use client";
 
+import axios from "axios";
+
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 
@@ -43,11 +45,11 @@ export function AuthForm() {
     setShowPassword(prevState => !prevState);
   }
 
-  function onSubmit(data: FieldValues) {
+  async function onSubmit(data: FieldValues) {
     setIsLoading(true);
 
     if (variant === 'REGISTER') {
-      // axios Register
+      await axios.post('/api/register', data);
     }
 
     if (variant === 'LOGIN') {
