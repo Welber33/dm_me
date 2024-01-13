@@ -25,6 +25,8 @@ module.exports = {
       'blueApp-700': '#3b82f6',
       'blueApp-600': '#60a5fa',
       'blueApp-500': '#93c5fd',
+
+      'greenActive-500': '#3dd707',
     },
   },
   
