@@ -10,7 +10,7 @@ export default async function Sidebar({ children }: { children: React.ReactNode 
     <div className="h-full">
       <DesktopSidebar currentUser={currentUser!} />
       <MobileFooter />
-      <main className="lg:pl-32 h-full">
+      <main className="lg:pl-[89px] h-full">
         {children}
       </main>
     </div>
