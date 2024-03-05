@@ -69,7 +69,10 @@ export function MessageBox({ data, isLast }: MessageBoxProps) {
               alt="Image"
               height="288"
               width="288"
-              className="object-cover cursor-pointer border-2 border-blueApp-600 rounded-lg hover:scale-110 transition translate"
+              className={clsx(
+                "object-cover cursor-pointer border-2 border-blueApp-600 rounded-lg hover:scale-110 transition translate",
+                !isOwnMessage && "object-cover cursor-pointer border-2 border-silvergray-300 rounded-lg hover:scale-110 transition translate"
+              )}
             />
           ) : (
             <div>
