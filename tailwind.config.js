@@ -28,6 +28,7 @@ module.exports = {
 
       'greenActive-500': '#3dd707',
 
+      'warning': '#f87171',
       'danger': '#ef4444',
     },
   },

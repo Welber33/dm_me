@@ -33,7 +33,7 @@ export function Button({
         disabled && "opacity-50 cursor-default",
         fullWidth && "w-full",
         secondary ? "text-silvergray-700" : "text-white",
-        danger && "bg-rose-500 hover:bg-rose-600 focus-visible:outline-rose-600",
+        danger && "bg-danger hover:bg-warning focus-visible:outline-rose-600",
         !secondary && !danger && "transition duration-400 bg-blueApp-700 hover:bg-blueApp-800 focus-visible:outline-blueApp-800"
       )}
     >

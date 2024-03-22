@@ -10,7 +10,7 @@ import { HiPaperAirplane, HiPhoto } from "react-icons/hi2";
 import { MessageInput } from "./MessageInput";
 import { CldUploadButton } from "next-cloudinary";
 
-const uploadPresetName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_UPLOAD_PRESET_NAME;
+export const uploadPresetName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_UPLOAD_PRESET_NAME;
 
 export function Form() {
   const { conversationId } = useConversation();
