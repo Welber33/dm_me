@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter, Roboto } from 'next/font/google'
 import { ToasterContext } from './context/ToasterContext'
 import { AuthContext } from './context/AuthContext'
+import ActiveStatus from './components/ActiveStatus'
 
 // const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <AuthContext>
           <ToasterContext />
+          <ActiveStatus />
           {children}
         </AuthContext>
       </body>
